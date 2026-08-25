@@ -2,6 +2,7 @@ services:
   - type: web
     name: pump-radar-learning-api
     runtime: node
+    plan: free
     buildCommand: npm install --omit=dev
     startCommand: npm run server:start
     healthCheckPath: /health
